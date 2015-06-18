@@ -2,14 +2,21 @@
     Create Note
 </button>
 <% if(_.size(notes) === 0){ %>
-    <div>You have no notes</div>
+    <div class="browsehappy" >You have no notes</div>
 <% }else{ %>
     <div class="table-responsive note-list-container">
+    
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>Title</th>
+                    
+                    <th>Title
+                    <a id="sortTitleUp"  ><span class="glyphicon glyphicon-sort-by-alphabet"></span></a>
+                    <a id="sortTitleDown"  ><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span></span></a>
+                         
+                    </th>
                     <th>Body</th>
+                    <th>Operation</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,9 +30,15 @@
                         <td class="ellipsis">
                             <%= note.get('body') %>
                         </td>
+                    <td class="deletebtn">
+                        <button data-note-id="<%= note.get('id') %>" class='deletenote' width='100px' >
+                        delete <%= note.get('id') %>
+                        </button>
+                    </td>
                     </tr>
                 <% }); %>
             </tbody>
         </table>
+        <button class="btn btn-primary" id='clear' width='100px' >    Clear All  Notes    </button>
     </div>
 <% } %>

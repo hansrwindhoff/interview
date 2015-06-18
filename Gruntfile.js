@@ -351,9 +351,9 @@ module.exports = function (grunt) {
                 'createDefaultTemplate',
                 'jst',
                 'compass',
-                'connect:test',
-                'mocha',
-                'watch:test'
+                'connect:test'
+                 ,'mocha'
+                //, 'watch:test'
             ];
             
         if(!isConnected) {

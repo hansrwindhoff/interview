@@ -3,7 +3,8 @@ sovrn Interview Project
 
 Thank you for your interest in working at sovrn!
 
-We have assembled a project that we'd like you to improve. This project is a simple notepad application, using local storage as a data store. This project will test your abilities with the following technologies:
+We have assembled a project that we'd like you to improve. This project is a simple notepad application, 
+using local storage as a data store. This project will test your abilities with the following technologies:
 
 - Git
 - Backbone.js
@@ -29,3 +30,19 @@ Notes:
 - This project uses Backbone.localstorage to integrate HTML5's localstorage with Backbone's sync methods
 - If you have questions or run into problems, don't worry! Please let us know so that we can continue to improve this project.
     - mcollins@sovrn.com
+
+
+
+Contact Info: 
+Hans Windhoff
+2670 Magnolia St
+Denver, CO 80207
+Cell 303 476 0097 
+hansrwindhoff@gmail.com
+github: hansrwindhoff
+
+Hans Notes:
+- I added typescript defintion files (requirejs and backbone) so that in Visual Studio Code (free cross plattform editor) there will be 
+  full intellisense on library functions in javascript
+- fixed minor bug in note.ejs : title in the edit/create dialog was not switched properly between "Create Note" and "Edit Note"
+   
